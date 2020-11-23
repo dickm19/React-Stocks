@@ -1,22 +1,20 @@
 import React, {Component} from 'react'
 
-export default class Stock extends Component {
+export default class PortfolioStock extends Component {
 
-
-  // state = {
-  //   bought: false
-  // }
+    // state = {
+    //     bought: true
+    // }
   handleCardClick = () => {
-    // return this.setState({
-    //   bought: !this.state.bought
-    // })
-    // , () => this.state.bought ? 
-    this.props.buyStock(this.props.stock)
-    // : console.log(this.state.bought))
+    //   return this.setState({
+    //       bought: !this.state.bought
+    //   }), () => this.state.bought ? console.log(this.state.bought) : 
+    this.props.sellStock(this.props.stock)
+      
     
   }
   render() {
-   
+    
     return (
       <div>
         <div  className="card">
